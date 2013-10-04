@@ -1,0 +1,46 @@
+
+<!-- saved from url=(0079)https://drupal.org/files/Issue+1271456+-+Lightbox+Trigger+in+Views+broken.patch -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"></style></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">From 81436143c139661ba061d85e0b9af89a910deb86 Thu, 24 Nov 2011 12:18:03 +0000
+From: Leon Kessler &lt;leonnk@595374.no-reply.drupal.org&gt;
+Date: Thu, 24 Nov 2011 12:17:32 +0000
+Subject: [PATCH] Issue 1271456 - Lightbox Trigger in Views broken
+
+diff --git a/lightbox2.info b/lightbox2.info
+index fca1793..7299424 100644
+--- a/lightbox2.info
++++ b/lightbox2.info
+@@ -8,6 +8,7 @@
+ files[] = lightbox2.module
+ files[] = lightbox2.formatter.inc
+ files[] = lightbox2.admin.inc
++files[] = lightbox2_handler_field_lightbox2.inc
+ 
+ configure = admin/config/user-interface/lightbox2
+ 
+diff --git a/lightbox2.views.inc b/lightbox2.views.inc
+index f784ad6..12f9231 100644
+--- a/lightbox2.views.inc
++++ b/lightbox2.views.inc
+@@ -27,21 +28,3 @@
+   );
+ 
+   return $data;
+-}
+-
+-/**
+- * Implementation of hook_views_handlers() to register all of the basic handlers
+- * views uses.
+- */
+-function lightbox2_views_handlers() {
+-  return array(
+-    'info' =&gt; array(
+-      'path' =&gt; drupal_get_path('module', 'lightbox2'),
+-    ),
+-    'handlers' =&gt; array(
+-      'lightbox2_handler_field_lightbox2' =&gt; array(
+-        'parent' =&gt; 'views_handler_field',
+-      ),
+-    ),
+-  );
+-}
+</pre></body></html>

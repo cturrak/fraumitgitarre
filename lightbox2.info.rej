@@ -1,0 +1,10 @@
+--- lightbox2.info
++++ lightbox2.info
+@@ -8,6 +8,7 @@
+ files[] = lightbox2.module
+ files[] = lightbox2.formatter.inc
+ files[] = lightbox2.admin.inc
++files[] = lightbox2_handler_field_lightbox2.inc
+ 
+ configure = admin/config/user-interface/lightbox2
+ 

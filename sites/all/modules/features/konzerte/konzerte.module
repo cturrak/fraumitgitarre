@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the konzerte feature.
+ */
+
+include_once 'konzerte.features.inc';

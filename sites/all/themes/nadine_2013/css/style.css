@@ -1,0 +1,415 @@
+/**
+ * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
+ * remove this comment and start adding your styles to this file.
+ */
+
+
+/*  Header  */
+
+.logo{
+  max-width: 100%;
+  margin-left: 17%;
+  margin-bottom: 20px;
+}
+
+header a:hover{
+  background-color: #fff;
+}
+
+/*  Blocks  */
+
+.well{
+  padding: 0;
+	background-color: transparent;
+  border: none;
+  border-radius: none;
+  box-shadow: none;
+}
+
+/*  Main-Menu  */
+
+#block-system-main-menu li{
+  margin-bottom: 15px;
+}
+
+
+#block-system-main-menu li a{
+  font-size: 18px;
+  color: #1a0500;
+}
+
+#block-system-main-menu li a.active-trail, #block-system-main-menu li a.active{
+  color: #450000;
+ /* text-decoration: underline; */
+}
+
+#block-system-main-menu li a.active-trail:before, #block-system-main-menu li a.active:before {
+content: "// ";
+}
+
+p{
+	font-size: 14px;
+  line-height: 20px;
+}
+
+a{
+  color: #450000;
+}
+
+
+
+a:hover{
+  text-decoration: none;
+  background-color: #eeeeee;
+  color: #1a0500;
+}
+
+
+
+h1{
+	font-size: 24px;
+  color: #333;
+}
+
+h2{
+  color: #450000;
+	font-size: 20px;
+	font-style: bold;
+
+}
+
+body{
+  font-family: 'Droid Serif';
+  color: #1a0500;
+  background: url(img/bg.png) no-repeat fixed;
+  background-position: top right;
+  background-size:100%;
+  /* background: url("img/bg.jpg") no-repeat fixed right -120px / 100% auto transparent;  /* tmp */
+}
+
+
+
+.field-name-field-link{
+  padding: 5px 0 5px 0;
+}
+
+.field-name-field-frontpage-download{
+  padding: 5px 0 5px 0;
+}
+
+.field-name-field-frontpage-download img{
+  display: none;
+}
+
+/* Frontpage */
+
+.field-name-field-frontpage-img{
+  margin-bottom: 15px;
+}
+
+
+.region-sidebar-second .block{
+  background-color: #F5F5F5;
+   border: none;
+   border-radius: 4px 4px 4px 4px;
+   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+   margin-bottom: 20px;
+   min-height: 20px;
+   padding: 19px;
+   opacity: .8;
+    filter: alpha(opacity=80);
+    -moz-opacity: .8;
+}
+
+/* Blöcke */
+
+h2.block-title{
+  font-size: 18px;
+}
+
+.view-c .views-row{
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.field-name-field-concert-date {
+  font-size: 12px;
+  font-weight: bold;
+  color: #450000;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+
+.field-name-field-concert-info-text p{
+  font-size: 12px;
+  margin: 5px 0 5px 0;
+  font-style: italic;
+}
+
+.field-name-field-concert-city{
+  padding-bottom: 3px;
+  margin-top: 3px;
+  font-weight: bold;
+}
+
+
+.views-field-field-concert-date{
+  font-weight: bold;
+  color: #450000;
+}
+
+.concerts-city{
+  font-weight: bold;
+}
+
+
+.view-footer a{
+
+}
+
+.news-teaser{
+  margin-top: 30px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.news-date{
+  margin-bottom: 3px;
+}
+
+.teaser-image{
+  padding: 0 10px 10px 0;
+}
+
+.teaser-image img{
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+.teaser-image img:hover{
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(0%);
+}
+
+/* Node */
+
+.node-img{
+	margin: 0 15px 15px 0;
+}
+
+.node-img-large{
+  margin: 0 0 15px 0;
+}
+
+.field-collection-view {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* News */
+
+.field-name-field-news-image-gallery{
+	margin: 15px 0 15px 0;
+}
+
+.field-name-field-news-image-gallery img{
+	padding: 0 5px 15px 0;
+}
+
+.field-name-field-news-links{
+	margin: 15px 0 15px 0;
+}
+
+.field-name-field-news-links a{
+	display: block;
+}
+
+a.node-back {
+  margin: 10px 0 10px 0;
+  display: block;
+  font-weight: bold;
+  font-style: italic;
+  clear: both;
+}
+
+
+
+
+/* Alben */
+
+.node-alben{
+  padding: 5px 0 15px 0;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.field-name-field-link-order{
+  margin: 15px 0 0 0;
+}
+
+.field-name-field-link-order a{
+  font-weight: bold;
+}
+
+.field-name-node-link{
+  margin: 10px 0 10px 0;
+}
+
+.field-name-node-link a{
+  font-weight: bold;
+}
+
+.field-name-field-alben-description{
+  margin: 15px 0 15px 0;
+}
+
+.field-name-field-alben-presse{
+  margin: 15px 0 15px 0;
+}
+
+
+/* Fotos */
+
+.foto{
+  padding: 10px 10px 10px 0;
+  float: left;
+}
+
+
+/* Fotos - View*/
+
+div.teaser-foto{
+  margin: 10px 8px 10px 0;
+  float: left;
+  border-bottom: 1px solid #fff; 
+  transition: border-bottom .25s ease-in-out;
+  -moz-transition: border-bottom .25s ease-in-out;
+  -webkit-transition: border-bottom .25s ease-in-out;
+}
+
+div.teaser-foto:hover{
+ border-bottom: 1px solid #ccc; 
+/*  border-radius: 3px; */
+/* background-color: #f5f5f5; */
+}
+
+div.teaser-foto img:hover{
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(0%);
+}
+
+
+div.teaser-foto img{
+filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+filter: gray; /* IE6-9 */
+-webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+.teaser-foto-link{
+  font-size: 16px;
+  padding: 5px 0 5px 0;
+}
+
+/* Social */
+
+#fb{
+  display: inline-block;
+  background-image: url("img/facebook.png");
+  background-repeat: no-repeat;
+  background-position: 15px 7px;
+  background-color: #ccc;
+  width: 54px;
+  height: 54px;
+   opacity: 1;
+   transition: background-color .25s ease-in-out;
+   -moz-transition: background-color .25s ease-in-out;
+   -webkit-transition: background-color .25s ease-in-out;
+  border-left:1px solid #ccc;
+  border-radius: 10px 10px 10px 10px;
+  margin-right: 12px;
+}
+
+#fb:hover{
+  background-color: #aaa;
+}
+
+#youtube{
+  display: inline-block;
+  background-image: url("img/youtube.png");
+  background-repeat: no-repeat;
+  background-position: 12px 7px;
+  background-color: #ccc;
+  width: 54px;
+  height: 54px;
+   transition: background-color .25s ease-in-out;
+   -moz-transition: background-color .25s ease-in-out;
+   -webkit-transition: background-color .25s ease-in-out;
+  border-left:1px solid #ccc;
+  border-radius: 10px 10px 10px 10px;
+  margin-right: 12px;
+}
+#youtube:hover{
+  background-color: #aaa;
+}
+
+
+#soundcloud{
+  display: inline-block;
+  background-image: url("img/soundcloud.png");
+  background-repeat: no-repeat;
+  background-position: 7px 18px;
+  background-color: #ccc;
+  width: 54px;
+  height: 54px;
+   transition: background-color .25s ease-in-out;
+   -moz-transition: background-color .25s ease-in-out;
+   -webkit-transition: background-color .25s ease-in-out;
+  border-left:1px solid #ccc;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#soundcloud:hover{
+  background-color: #aaa;
+}
+
+
+body iframe ._4s7c {
+  margin-top:100px !important;
+border-color: #F5F5F5;
+}
+
+iframe.div{
+  border: none;
+}
+
+#block-menu-menu-footer-menu li{
+  display: inline;
+  padding-right: 10px;
+}
+
+#block-menu-menu-footer-menu li a{
+  font-size: 12px;
+  font-weight: bold;
+  display: inline;
+}
+
+.webform-component-textarea{
+  margin-bottom: 15px;
+}
+
+
+
+*/
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+.logo{
+  max-width: 100%;
+  margin-left: 0;
+}
+
+
+ }
+

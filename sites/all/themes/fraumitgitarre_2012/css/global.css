@@ -1,0 +1,435 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+
+/* Typewriter Font einbetten */
+/*
+@font-face {
+    font-family: '1913_typewriternormal';
+    src: url('fonts/1913_typewriter-normal-webfont.eot');
+    src: url('fonts/1913_typewriter-normal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/1913_typewriter-normal-webfont.woff') format('woff'),
+         url('fonts/1913_typewriter-normal-webfont.ttf') format('truetype'),
+         url('fonts/1913_typewriter-normal-webfont.svg#1913_typewriternormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: '1913_typewriterbold';
+    src: url('fonts/1913_typewriter-bold-webfont.eot');
+    src: url('fonts/1913_typewriter-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/1913_typewriter-bold-webfont.woff') format('woff'),
+         url('fonts/1913_typewriter-bold-webfont.ttf') format('truetype'),
+         url('fonts/1913_typewriter-bold-webfont.svg#1913_typewriterbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*/
+/* Import font */
+
+@import url(http://fonts.googleapis.com/css?family=La+Belle+Aurore);
+@import url(http://fonts.googleapis.com/css?family=Walter+Turncoat);
+@import url(http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise);
+/* Logo */
+
+.site-name a {
+  font-family: 'La Belle Aurore';
+  text-decoration: none;
+  color: #d0cbc6 !important;
+  font-size: 55px;
+}
+
+.site-slogan {
+  font-family: 'Walter Turncoat';
+  text-decoration: none;
+  margin-top: -3px;
+  padding-left: 157px;
+  color: #2b2b2b;
+  font-size: 30px;
+}
+
+a:link, a:visited {
+color: #7c7c7c;
+text-decoration: none;
+}
+
+a:hover{
+   color: #aaa;
+}
+
+ul#main-menu li{
+  font-family: 'Walter Turncoat','1913_typewriternormal';
+  font-size: 20px;
+  color: #3b3a44;
+}
+
+ul#main-menu li a{
+  text-decoration: none;
+}
+
+ul#main-menu li.active a{
+  color: #3b3a44;
+}
+
+h1.title{
+  font-family: 'Walter Turncoat','1913_typewriternormal';
+  text-decoration: none;
+  color: #3b3a44;
+  font-size: 180%;
+}
+
+h2.node-title {
+  font-family: 'Walter Turncoat','1913_typewriternormal';
+}
+
+h2.node-title  a{
+  font-family: 'Walter Turncoat','1913_typewriternormal';
+  text-decoration: none;
+  color: #3b3a44;
+}
+
+div#zone-branding-wrapper{
+  margin-bottom: 40px;
+  margin-top: 70px;
+}
+
+
+body{
+  background: url(img/bg.jpg) no-repeat fixed;
+  background-size:100% auto;
+  color: #3b3a44;
+}
+
+p{
+  font: 14px/1.5 arial, sans-serif;
+  color: #2b2b2b;
+}
+
+
+/* Nodes */
+
+.node a{
+  font: 20px/1.6 arial, sans-serif;
+  text-decoration: none;
+  color: #9d602f;
+}
+
+.field-name-field-news-teaserimage {
+  float: left;
+  padding: 0 10px 10px 0;
+}
+
+.field-name-field-news-image-gallery .field-item{
+  float: left;
+  padding: 0 6px 5px 0;
+}
+
+
+div.field-name-field-news-links {
+  margin: 0 0 20px 0;
+}
+
+a.node-back {
+  margin-top: 20px;
+  font-family: '1913_typewriternormal';
+  font-size: 25px;
+}
+
+#block-nodeblock-6 {
+  margin-bottom: 20px;
+}
+
+
+/* Views */
+
+a.views-more-link{
+  font-family: '1913_typewriternormal';
+  text-decoration: none;
+  color: #9d602f;
+}
+
+.views-field.views-field-field-news-teaserimage {
+  float: left;
+  padding: 0 10px 10px 0;
+}
+
+.views-row {
+  margin-bottom: 60px;
+  clear: both;
+}
+
+.views-field-changed{
+  font: 20px/1.5 arial, sans-serif;
+  text-decoration: none;
+  color: #aaa;
+}
+
+h2.block-title {
+  font-family: 'Walter Turncoat';
+  text-decoration: none;
+  color: #3b3a44;
+  font-size: 25px;
+}
+
+.view-konzerte{
+  font: 20px/1.5 arial, sans-serif;
+  text-decoration: none;
+  color: #3b3a44;
+  background-color: transparent !important;
+}
+
+table {
+border: none;
+width: 100%;
+
+}
+
+table tr{
+border-bottom: none !important;
+background-color: transparent !important;
+}
+
+table tr td{
+border-bottom: none !important;
+background-color: transparent !important;
+vertical-align:top;
+}
+
+table p{
+  margin: 0;
+  padding: 0;  
+}
+
+table td{
+  color: #3b3a44 !important;
+  font: 14px/1.5 arial, sans-serif !important;
+}
+
+#node-11 table tr td{
+  width: 1%;
+}
+
+
+/*Alben */
+
+div.jp-interface{
+  background-color: transparent;
+  border: none;
+
+}
+
+div.jp-playlist{
+  background-color: transparent;
+  border: none;
+
+}
+
+
+.node-alben img{
+  margin: 10px 10px 10px 0px;
+  float: left;
+
+}
+
+.jp-audio{
+  clear: both;
+}
+
+
+.alben-img-wrapper{
+  float: left;
+
+}
+
+.alben-descr{
+  clear: both;
+  padding-top: 20px;
+}
+
+
+/*Fotos */
+
+
+
+.galleria-container{
+  background: transparent !important;
+}
+
+
+.galleria-thumbnails-container {
+  left: 0;
+  right: 0;
+  }
+
+.galleria-stage{
+  left: 0;
+  right: 0;
+  }
+
+
+.field-collection-view {
+margin: 0;
+  }
+
+ 
+.node-fotos .field-collection-container .field-type-image .field-items .field-item {
+  margin: 0 10px 15px 0;
+  float: left;
+}
+
+.node-fotos .field-collection-container .field-type-image .field-item img{
+  -moz-box-shadow: 0 0 5px 5px #888;
+  -webkit-box-shadow: 0 0 5px 5px#888;
+  box-shadow: 0 0 5px 5px #888;
+  opacity: 0.8;
+}
+
+.node-fotos .field-collection-container .field-items .field-item img:hover{
+  opacity: 1;
+  -moz-box-shadow: 0 0 5px 5px #333;
+  -webkit-box-shadow: 0 0 5px 5px#333;
+  box-shadow: 0 0 5px 5px #333;
+}
+
+
+/* Alben jplayer */
+
+
+div.jp-audio{
+  float: left;
+  clear: none;
+}
+
+div.jp-playlist li{
+  list-style-type: none !important;
+  
+  border: none !important;
+  line-height: 12px !important;
+}
+
+div.jp-playlist a.jp-playlist-current {
+  color: #966942 !important;
+}
+
+div.jp-type-playlist div.jp-playlist li a{
+  font-size: 14px;
+  margin: 0;
+  line-height: 14px;
+}
+
+.field-name-field-alben-description{
+  margin: 30px 0px 20px 0;
+  clear:both;
+
+}
+
+/* Projekte */
+
+
+.field-name-field-page-item-img{
+  float: left;
+  margin: 0 15px 15px 0;
+}
+
+
+/* Block Simplenews */
+
+.block-simplenews{
+  margin-bottom: 30px;
+}
+
+/* Social Buttons */
+
+#social-buttons{
+  
+ 
+}
+
+#fb{
+  position: fixed;
+  right: 0;
+  top: 100px;
+  display: block;
+  background-image: url("img/facebook.png");
+  background-repeat: no-repeat;
+  background-position: 15px 5px;
+  background-color: #ccc;
+  width: 60px;
+  height: 60px;
+  transition: width 0.3s;
+  -moz-transition: width 0.3s; /* Firefox 4 */
+  -webkit-transition: width 0.3s; /* Safari and Chrome */
+  -o-transition: width 0.3s; /* Opera */
+  border-left:1px solid #ccc;
+  border-radius: 10px 0 0 10px;
+}
+
+#fb:hover{
+  width: 100px;
+  height: 60px;
+  transition: width 0.3s;
+  -moz-transition: width 0.3s; /* Firefox 4 */
+  -webkit-transition: width 0.3s; /* Safari and Chrome */
+  -o-transition: width 0.3s; /* Opera */
+}
+
+#youtube{
+  position: fixed;
+  right: 0;
+  top: 170px;
+  display: block;
+  background-image: url("img/youtube.png");
+  background-repeat: no-repeat;
+  background-position: 15px 6px;
+  background-color: #ccc;
+  width: 60px;
+  height: 60px;
+  transition: width 0.3s;
+  -moz-transition: width 0.3s; /* Firefox 4 */
+  -webkit-transition: width 0.3s; /* Safari and Chrome */
+  -o-transition: width 0.3s; /* Opera */
+  border-left:1px solid #ccc;
+  border-radius: 10px 0 0 10px;
+}
+
+#youtube:hover{
+  width: 100px;
+  height: 60px;
+  transition: width 0.3s;
+  -moz-transition: width 0.3s; /* Firefox 4 */
+  -webkit-transition: width 0.3s; /* Safari and Chrome */
+  -o-transition: width 0.3s; /* Opera */
+}
+
+#soundcloud{
+  position: fixed;
+  right: 0;
+  top: 240px;
+  display: block;
+  background-image: url("img/soundcloud.png");
+  background-repeat: no-repeat;
+  background-position: 5px 20px;
+  background-color: #ccc;
+  width: 60px;
+  height: 60px;
+  transition: width 0.3s;
+  -moz-transition: width 0.3s; /* Firefox 4 */
+  -webkit-transition: width 0.3s; /* Safari and Chrome */
+  -o-transition: width 0.3s; /* Opera */
+  border-left:1px solid #ccc;
+  border-radius: 10px 0 0 10px;
+}
+
+#soundcloud:hover{
+  width: 100px;
+  height: 60px;
+  transition: width 0.3s;
+  -moz-transition: width 0.3s; /* Firefox 4 */
+  -webkit-transition: width 0.3s; /* Safari and Chrome */
+  -o-transition: width 0.3s; /* Opera */
+}
+
+
