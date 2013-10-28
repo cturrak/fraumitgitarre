@@ -29,13 +29,13 @@ header a:hover{
 /*  Main-Menu  */
 
 #block-system-main-menu li{
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 
 #block-system-main-menu li a{
-  font-size: 18px;
-  color: #1a0500;
+  font-size: 20px;
+  color: #450000;
 }
 
 #block-system-main-menu li a.active-trail, #block-system-main-menu li a.active{
@@ -44,7 +44,7 @@ header a:hover{
 }
 
 #block-system-main-menu li a.active-trail:before, #block-system-main-menu li a.active:before {
-content: "// ";
+  content: "// ";
 }
 
 /*  Typografie  */
@@ -100,6 +100,9 @@ body{
   display: none;
 }
 
+h2.subtitle{
+}
+
 /* Frontpage */
 
 .field-name-field-frontpage-img{
@@ -115,10 +118,8 @@ body{
 /* Blöcke */
 
 .region-sidebar-second .block{
-  background-color: #fff;
+  background-color: #f5f5f5;
    border: none;
-   border-radius: 4px 4px 4px 4px;
-   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
    margin-bottom: 20px;
    min-height: 20px;
    padding: 19px;
@@ -156,7 +157,6 @@ h2.block-title{
 
 .field-name-field-concert-city{
   padding-bottom: 3px;
-  margin-top: 3px;
   font-weight: bold;
 }
 
@@ -171,18 +171,33 @@ td.concerts-city{
   text-align: right;
 }
 
+td.concerts-city a{
+  font-weight: normal;
+}
+
 #block-nodeblock-6{
   border-bottom: 1px solid #eeeeee;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   margin-bottom: 20px;
 }
 
 /* News-Teaser */
 
+.view-header h1{
+  padding-bottom: 9px;
+  margin: 20px 0 15px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
 .news-teaser{
   margin-top: 30px;
   border-bottom: 1px solid #eee;
   padding-bottom: 10px;
+}
+
+.news-teaser a{
+  font-weight: bold;
+  font-style: italic;
 }
 
 .news-date{
@@ -200,6 +215,7 @@ td.concerts-city{
 }
 
 .teaser-image img:hover{
+  filter: none;
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
   -webkit-filter: grayscale(0%);
 }
@@ -246,6 +262,7 @@ td.concerts-city{
 
 a.node-back {
   margin: 10px 0 10px 0;
+  padding: 10px 2px 2px 2px;
   display: block;
   font-weight: bold;
   font-style: italic;
@@ -262,11 +279,20 @@ a.node-back {
   border-bottom: 1px solid rgb(238, 238, 238);
 }
 
-.field-name-field-link-order{
+.alben-links{
+  padding: 5px 0 5px 0;
+}
+
+.alben-links a{
+  font-weight: bold;
+  font-style: italic;
+}
+
+.field-name-field-link-order, .field-name-field-alben-links{
   margin: 15px 0 0 0;
 }
 
-.field-name-field-link-order a{
+.field-name-field-link-order a, .field-name-field-alben-links a{
   font-weight: bold;
 }
 
@@ -290,7 +316,7 @@ a.node-back {
 /* Fotos */
 
 .foto{
-  padding: 10px 10px 10px 0;
+  padding: 10px 8px 0px 0;
   float: left;
 }
 
@@ -306,17 +332,7 @@ div.teaser-foto{
   -webkit-transition: border-bottom .25s ease-in-out;
 }
 
-div.teaser-foto img:hover{
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
-  -webkit-filter: grayscale(0%);
-}
 
-
-div.teaser-foto img{
-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
-filter: gray; /* IE6-9 */
--webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
-}
 
 .teaser-foto-link{
   font-size: 14px;
@@ -324,6 +340,10 @@ filter: gray; /* IE6-9 */
 }
 
 /* Social Buttons */
+
+.social-buttons{
+  min-width: 100px;
+}
 
 #fb{
   display: inline-block;
@@ -337,13 +357,12 @@ filter: gray; /* IE6-9 */
    transition: background-color .25s ease-in-out;
    -moz-transition: background-color .25s ease-in-out;
    -webkit-transition: background-color .25s ease-in-out;
-  border-left:1px solid #ccc;
   border-radius: 10px 10px 10px 10px;
   margin-right: 12px;
 }
 
 #fb:hover{
-  background-color: #aaa;
+  background-color: #f5f5f5;
 }
 
 #youtube{
@@ -357,12 +376,11 @@ filter: gray; /* IE6-9 */
    transition: background-color .25s ease-in-out;
    -moz-transition: background-color .25s ease-in-out;
    -webkit-transition: background-color .25s ease-in-out;
-  border-left:1px solid #ccc;
   border-radius: 10px 10px 10px 10px;
   margin-right: 12px;
 }
 #youtube:hover{
-  background-color: #aaa;
+  background-color: #f5f5f5;
 }
 
 
@@ -377,19 +395,13 @@ filter: gray; /* IE6-9 */
    transition: background-color .25s ease-in-out;
    -moz-transition: background-color .25s ease-in-out;
    -webkit-transition: background-color .25s ease-in-out;
-  border-left:1px solid #ccc;
   border-radius: 10px 10px 10px 10px;
 }
 
 #soundcloud:hover{
-  background-color: #aaa;
+  background-color: #f5f5f5;
 }
 
-
-body iframe ._4s7c {
-  margin-top:100px !important;
-border-color: #F5F5F5;
-}
 
 iframe.div{
   border: none;
